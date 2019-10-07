@@ -2,7 +2,12 @@
 import React from "react";
 
 const ProductRow = () => {
-  return <p>product row</p>;
+  return (
+    <tr>
+      <td>Bamba</td>
+      <td>$ 0.00</td>
+    </tr>
+  );
 };
 
 export default ProductRow;

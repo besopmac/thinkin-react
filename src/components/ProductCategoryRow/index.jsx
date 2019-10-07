@@ -2,7 +2,7 @@
 import React from "react";
 
 const ProductCategoryRow = () => {
-  return <p>product category row</p>;
+  return <td colSpan="2">product category row</td>;
 };
 
 export default ProductCategoryRow;
