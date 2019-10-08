@@ -7,6 +7,6 @@ import FilterableProductTable from "./components/FilterableProductTable";
 import products from "./products.json";
 
 ReactDOM.render(
-  <FilterableProductTable products={products} />,
+  <FilterableProductTable products={products} title="Thinking in React" />,
   document.getElementById("root")
 );

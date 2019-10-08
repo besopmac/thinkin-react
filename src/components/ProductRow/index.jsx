@@ -1,13 +1,17 @@
 // displays a row for each product
-import React from "react";
+import React, { Component } from "react";
 
-const ProductRow = () => {
-  return (
-    <tr>
-      <td>Bamba</td>
-      <td>$ 0.00</td>
-    </tr>
-  );
+class ProductRow extends Component {
+  render() {
+    const { product } = this.props;
+
+    return (
+      <tr key={product.name} className={!product.stocked ? 'table-danger' : ''}>
+        <td>{product.name}</td>
+        <td>{product.price}</td>
+      </tr>
+    );
+  }
 };
 
 export default ProductRow;
